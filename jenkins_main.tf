@@ -5,6 +5,15 @@ provider "aws" {
     secret_key = "y8KNsS/WBt+oyTtzbefASSkK3lODxb2eNbu8wQmc"
 }
 
+resource "aws_s3_bucket" "b" {
+  bucket = "mybucketofthis24"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
+
 
 terraform {
   backend "s3" {
