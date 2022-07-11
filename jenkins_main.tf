@@ -11,7 +11,7 @@ terraform {
   backend "s3" {
     bucket = "mybucketofthis24"
     key    = "terraform.tfstate"
-    region = "us-east-1"
+    region = "ap-south-1"
     profile = "learner"  
     access_key = "AKIAYWDAFQGD3CUTSB7Q"
     secret_key = "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"  
