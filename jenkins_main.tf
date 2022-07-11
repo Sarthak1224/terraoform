@@ -9,7 +9,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "mybucket"
-    key    = "path/to/my/key"
+    key    = "terraform.tfstate"
     region = "us-east-1"
     profile = "learner"  
     access_key = "AKIAYWDAFQGD3CUTSB7Q"
