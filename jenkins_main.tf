@@ -29,7 +29,6 @@ resource "aws_ebs_volume" "avolume" {
 
 
   resource "aws_instance" "new_instance" {
-    region = "ap-south-1"
     instance_type = "t2.micro"
     ami = "ami-0667149a69bc2c367"
 #    key_name = "new"
