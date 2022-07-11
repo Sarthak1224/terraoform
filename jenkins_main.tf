@@ -6,12 +6,11 @@ provider "aws" {
 }
 
 
-resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
+terraform {
+  backend "s3" {
+    bucket = "mybucket"
+    key    = "path/to/my/key"
+    region = "us-east-1"
   }
 }
 
