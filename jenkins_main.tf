@@ -12,6 +12,8 @@ terraform {
     key    = "path/to/my/key"
     region = "us-east-1"
     profile = "learner"  
+    access_key = "AKIAYWDAFQGD3CUTSB7Q"
+    secret_key = "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"  
   }
 }
 
