@@ -8,7 +8,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "mybucket"
+    bucket = "mybucketofthis24"
     key    = "terraform.tfstate"
     region = "us-east-1"
     profile = "learner"  
