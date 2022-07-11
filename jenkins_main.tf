@@ -10,8 +10,8 @@ terraform {
   backend "s3" {
     bucket = "my-state-bucket-name"
     key    = "my-terraform-project"
-    region = "eu-west-2"
-    shared_credentials_file = "~/.aws/credentials"
+    region = "ap-south-1"
+    acl    = "private"
   }
 }
 
