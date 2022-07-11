@@ -6,12 +6,12 @@ provider "aws" {
 }
 
 
-terraform {
-  backend "s3" {
-    bucket = "my-state-bucket-name"
-    key    = "my-terraform-project"
-    region = "ap-south-1"
-    acl    = "private"
+resource "aws_s3_bucket" "b" {
+  bucket = "my-tf-test-bucket"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
   }
 }
 
