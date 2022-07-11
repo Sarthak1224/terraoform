@@ -3,17 +3,17 @@ provider "aws" {
     region = "ap-south-1" 
     access_key = "AKIAYWDAFQGD3CUTSB7Q"
     secret_key = "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"
+}
 
 
-
-
+terraform {
   backend "s3" {
     bucket = "mybucket"
     key    = "path/to/my/key"
     region = "us-east-1"
-   }
- }
+  }
 }
+
 
 resource "aws_ebs_volume" "avolume" {
     availability_zone = "ap-south-1a"
